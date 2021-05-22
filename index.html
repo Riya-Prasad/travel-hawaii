@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+</head>
+<body>
+
+    <div class="overlay">
+        <h1>Chasing Dreams</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="logo">Escape</div>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Places</li>
+                <li>Hotels</li>
+                <li>Search</li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+            </ul>
+        </div>
+
+        <div class="side-strip">
+            <span>ADVENTURES FILL SOUL</span>
+        </div>
+
+        <div class="header">
+            <h1>Hawaii is not a state of mind <br> but a state of grace</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem illum necessitatibus unde! Quae laboriosam voluptatibus aspernatur corporis tempora quia alias, vitae soluta! Odit cumque inventore fuga incidunt distinctio dolorum quis, quasi maxime sint aspernatur tempora, neque facilis numquam ab! Corporis!</p>
+
+            <button>EXPLORE</button>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint nam recusandae.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint nam recusandae.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint nam recusandae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".logo", 1, {
+            delay: 2.4,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.staggerFrom(".nav ul li", 1, {
+            delay: 2.4,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        }, 0.2);
+
+        TweenMax.staggerFrom(".social ul li", 1, {
+            delay: 2.4,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        }, 0.2);
+
+        TweenMax.from(".side-strip", 2, {
+            delay: 2.4,
+            opacity:0,
+            y: 40,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".row", 2, {
+            delay: 2.4,
+            opacity:0,
+            x: 40,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".row h6", 2, {
+            delay: 3,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".row p", 2, {
+            delay: 3.2,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".header h1", 2, {
+            delay: 3.2,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".header p", 2, {
+            delay: 3.4,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".header button", 2, {
+            delay: 3.6,
+            opacity:0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+        
+    </script>
+    
+</body>
+</html>
