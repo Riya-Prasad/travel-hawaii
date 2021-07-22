@@ -59,9 +59,10 @@ body{
     right: -4em;
     transform: rotate(90deg);
     color: #e4efe7;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     word-spacing: 4px;
-    font-weight: 400;
+    font-size: larger;
+    font-weight: 450;
 }
 
 
